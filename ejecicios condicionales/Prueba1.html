@@ -9,18 +9,43 @@
     <script>
         //pedir 5 números y decir si es par o impar
         
-        let n = 1 ;
-        while(n<=5){
-            let num = parseInt(prompt("Escriba un número"));
-            if(num%2==0) {
-                alert("El número "+num+" es par");
-            }else {
-            alert("El número "+num+ " es impar ");
-            }
-        n++
-        }
+        //let n = 1 ;
+        //while(n<=5){
+          //  let num = parseInt(prompt("Escriba un número"));
+            //if(num%2==0) {
+              //  alert("El número "+num+" es par");
+            //}else {
+            //alert("El número "+num+ " es impar ");
+            //}
+        //n++
+        //}
 
-        alert("Final");
+        //alert("Final");
+        //let n = 1;
+        //let sumatoria=0;
+          //  while(n<=7){
+            //let num = parseInt(prompt("Escriba un número"));
+            //sumatoria +=num;// o sum=num+sum;
+          //  n++
+           // alert("El contador va en  "+sumatoria)
+            
+        //}
+       // alert("suma  totales igual a " + sumatoria)
+        //alert("Final chaval");
+        let n=1;
+        let multi= 1;
+        let can = parseInt(prompt("Escriba la cantidad de números que desea multiplicar"));
+
+         while (n <= can) {
+            let num = parseInt(prompt("Escriba un número"));
+            multi*=num;
+
+            alert("El resultado parcial es :"+multi);
+            
+        }
+            alert("El resultado final  es :"+multi);
+            alert("Finall :)")
+        
     </script>
 </body>
 </html>
