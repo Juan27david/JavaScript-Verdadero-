@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let operacion = prompt("Escriba la operacion deseada:").toLowerCase();
+        let num1 = parseInt(prompt("Escriba el primer numero :"));
+        let num2 = parseInt(prompt("Escriba el segundo numero :"));
+
+
+        switch (num1, num2, operacion) {
+
+            case "suma":
+                let sum = num1 + num2;
+                alert("La suma es " + sum)
+                break;
+
+            case "resta":
+                let res = num1 - num2;
+                alert("la resta es " + res)
+                break;
+
+            case "multiplicacion":
+                let multi = (num1 * num2);
+                alert("La multiplicacion es " + multi)
+                break;
+
+            case "division":
+                let div = (num1 / num2);
+                alert("la division es " + div)
+                break;
+
+        }
+    </script>
+</body>
+
+</html>
