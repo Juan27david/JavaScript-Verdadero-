@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>let accion = parseInt(prompt(
+    "COMBATE RPG\n" +
+    "1. Ataque Rápido - 20 pts de daño\n" +
+    "2. Ataque Pesado - 45 pts de daño\n" +
+    "3. Curación - +30 pts de vida\n\n" +
+    "Seleccione una acción:"
+));
+
+let estado = prompt(
+    "Ingrese el estado del enemigo:\n" +
+    "Defensa Activa\n" +
+    "Normal"
+);
+
+let resultado;
+
+switch (accion) {
+
+    case 1:
+        if (estado === "Defensa Activa") {
+            resultado = 20 / 2;
+
+            alert(
+                "¡Ataque Rápido mitigado por defensa!" +
+                "\nDaño final infligido: " + resultado + " puntos."
+            );
+        } else {
+            resultado = 20;
+
+            alert(
+                "¡Ataque Rápido!" +
+                "\nDaño final infligido: " + resultado + " puntos."
+            );
+        }
+        break;
+
+    case 2:
+        if (estado === "Defensa Activa") {
+            resultado = 45 / 2;
+
+            alert(
+                "¡Ataque Pesado mitigado por defensa!" +
+                "\nDaño final infligido: " + resultado + " puntos."
+            );
+        } else {
+            resultado = 45;
+
+            alert(
+                "¡Ataque Pesado!" +
+                "\nDaño final infligido: " + resultado + " puntos."
+            );
+        }
+        break;
+
+    case 3:
+        resultado = 30;
+
+        alert(
+            "¡Curación realizada!" +
+            "\nVida recuperada: +" + resultado + " puntos."
+        );
+        break;
+
+    default:
+        alert("Acción no válida.");
+        break;
+}</script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let codigo = parseInt(prompt(
+    "EXPENDEDORA DE BEBIDAS\n" +
+    "101. Agua - $2000\n" +
+    "102. Gaseosa - $3500\n" +
+    "103. Energizante - $5000\n\n" +
+    "Ingrese el código del producto:"
+));
+
+let dinero = parseInt(prompt("Ingrese el dinero:"));
+
+let producto;
+let precio;
+
+switch (codigo) {
+
+    case 101:
+        producto = "Agua";
+        precio = 2000;
+        break;
+
+    case 102:
+        producto = "Gaseosa";
+        precio = 3500;
+        break;
+
+    case 103:
+        producto = "Energizante";
+        precio = 5000;
+        break;
+
+    default:
+        alert("Código de producto no válido.");
+        break;
+}
+
+if (dinero >= precio) {
+
+    let cambio = dinero - precio;
+
+    alert(
+        "Producto despachado: " + producto +
+        "\nSu cambio es: $" + cambio
+    );
+
+} else {
+    alert("Dinero insuficiente para comprar el producto.");
+}
+    </script>
+</body>
+</html>

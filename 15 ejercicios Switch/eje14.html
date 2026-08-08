@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       let opcion = parseInt(prompt(
+    "CONVERSOR DE UNIDADES\n" +
+    "1. Longitud - Metros a Kilómetros\n" +
+    "2. Peso - Kilogramos a Libras\n" +
+    "3. Temperatura - Celsius a Fahrenheit\n\n" +
+    "Seleccione una opción:"
+));
+
+let valor;
+let resultado;
+
+switch (opcion) {
+
+    case 1:
+        valor = parseFloat(prompt("Ingrese el valor en metros:"));
+
+        resultado = valor / 1000;
+
+        alert(
+            valor + " metros equivalen a " +
+            resultado + " kilómetros"
+        );
+        break;
+
+    case 2:
+        valor = parseFloat(prompt("Ingrese el peso en kilogramos:"));
+
+        resultado = valor * 2.20462;
+
+        alert(
+            valor + " kg equivalen a " +
+            resultado.toFixed(2) + " libras"
+        );
+        break;
+
+    case 3:
+        valor = parseFloat(prompt("Ingrese la temperatura en Celsius:"));
+
+        resultado = (valor * 9 / 5) + 32;
+
+        alert(
+            valor + " °C equivalen a " +
+            resultado.toFixed(1) + " °F"
+        );
+        break;
+
+    default:
+        alert("Opción no válida.");
+        break;
+} 
+    </script>
+</body>
+</html>

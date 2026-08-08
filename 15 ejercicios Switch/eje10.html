@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //leer una letra y mostrar lacalificacion correspondiente
+      let tipo = parseInt(prompt("Ingrese el tipo de vehículo (M para Moto, A para Auto, C para Camión):"));
+      let horas = 4;
+      let tarifa;
+      let vehiculo; 
+
+switch (tipo) {
+    case "M":
+        vehiculo = "Moto";
+        tarifa = 2000;
+        break;
+
+    case "A":
+        vehiculo = "Auto";
+        tarifa = 4000;
+        break;
+
+    case "C":
+        vehiculo = "Camión";
+        tarifa = 8000;
+        break;
+
+    default:
+        alert("Tipo de vehículo no válido");
+        break;
+}
+
+let total = tarifa * horas;
+
+alert(
+    "Vehículo: " + vehiculo +
+    "\nTarifa: $" + tarifa + "/h" +
+    "\nTotal cobro: $" + total
+);
+    </script>
+</body>
+</html>
