@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let numero = parseInt(prompt("Ingrese un número:"));
+    let suma = 0;
+    let cantidad = 0;
+
+    while (numero != 0) {
+
+        if (numero % 10 == 5) {
+            suma = suma + numero;
+            cantidad = cantidad + 1;
+        }
+
+        numero = parseInt(prompt("Ingrese otro número (0 para terminar):"));
+    }
+
+    if (cantidad > 0) {
+        let promedio = suma / cantidad;
+        console.log("El promedio es: " + promedio);
+    } else {
+        console.log("No hay números terminados en 5");
+    }
+    </script>
+</body>
+</html>

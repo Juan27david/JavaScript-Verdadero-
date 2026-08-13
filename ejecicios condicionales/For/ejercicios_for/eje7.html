@@ -7,7 +7,16 @@
 </head>
 <body>
     <script>
-        
+        let numero = parseInt(prompt("Ingresa un número entero:"));
+            let suma = 0;
+
+            while (numero > 0) {
+                let digito = numero % 10;
+                suma += digito;
+                numero = Math.floor(numero / 10);
+            }
+
+            console.log("La suma de los dígitos es: " + suma);
     </script>
 </body>
 </html>
