@@ -5,25 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>i % 3 == 0
+<body>
     <script>
-      //  let cant = parseInt(prompt("Escriba la cantidad de multiplos de 3 que quiera ver "));
-        
-        //    for (let i = 1; i <=cant; i++<=cant) {
-          
-          //          console.log("Número multiplo de 3 es:" + i);
-          
-
-            //    }
-    let cant = parseInt(prompt("Escriba la cantidad de multiplos de 3 que quiera ver "));
-    let con=1;
-            while(con<=cant){
-                multiplo+=i*3;
-                con++
-                console.log("La suma v en :"+multiplo);
+        let cant = parseInt(prompt("Escriba la cantidad de multiplos de 3 que quiera ver "));
+        suma=0;
+            for (let i = 1; i <=cant; i++) {
+            suma+=i*3;
             }
-            let promedio=Math.abs(suma/n);
-            console.log("El promedio es ")
-    </script>
+            let prome = Math.abs(suma/cant);
+            console.log("El promedio es:"+prome);    
+          </script>
 </body>
 </html>

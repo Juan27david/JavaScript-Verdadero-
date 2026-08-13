@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //leer un número y determinar si es primo
+
+    let num = parseInt(prompt("Escriba un número:"));
+
+        let i = 2;
+        let contador = 0;
+
+        while (i < num) {
+            if (num % i === 0) {
+                contador++;
+            }
+            i++;
+        }
+
+        if (contador === 0) {
+            alert("Es primo");
+        } else {
+            alert("No es primo");
+        }
+
+    </script>
+</body>
+</html>
