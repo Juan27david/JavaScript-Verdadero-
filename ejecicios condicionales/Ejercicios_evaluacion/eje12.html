@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let nota = parseFloat(prompt("Ingrese una nota: "));
+        let contador = 0;
+        let suma = 0;
+
+        while (nota != -1) {
+
+            contador++;
+            suma = suma + nota;
+
+            nota = parseFloat(prompt("Ingrese otra nota: "));
+        }
+
+        let promedio = suma / contador;
+
+        alert("Cantidad de notas: " + contador +
+            "\nSuma de las notas: " + suma +
+            "\nPromedio: " + promedio);
+    </script>
+</body>
+
+</html>

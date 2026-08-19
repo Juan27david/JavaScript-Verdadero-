@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let n = parseInt(prompt("Ingrese un numero: "));
+        let suma = 0;
+        let contador = 0;
+        while (n !== 0) {
+            if (n % 10 == 3) {
+                suma = suma + n;
+                contador++;
+            }
+            n = parseInt(prompt("Ingrese un numero: "));
+        }
+        let promedio = suma / contador;
+        alert("El promedio de los numeros que terminan en 3 es: " + promedio);
+    </script>
+</body>
+
+</html>

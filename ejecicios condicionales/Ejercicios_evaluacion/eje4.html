@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let compra = parseInt(prompt("Escriba el valor de la compra"));
+        let desc=0;
+        let total=0;
+        if(compra <100000){
+            alert("El total a pagar es "+compra);
+
+        }else if(compra>=100000 && compra<=299999){
+            desc=(compra*10)/100;
+            total = compra - desc;
+            alert("El valor de la compra es: "+compra+"el descuento es "+desc+" el total a pagar es "+total )
+        }else if(compra>=300000){
+            desc=(compra*20)/100;
+            total = compra - desc;
+            alert("El valor de la compra es: "+compra+"el descuento es "+desc+" el total a pagar es "+total )
+        }else{
+            alert("Error , número o caracter no valido")
+        }
+    </script>
+</body>
+</html>

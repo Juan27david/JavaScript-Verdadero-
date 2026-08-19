@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let soli = prompt("Digite 'si' si quiere entrar al sistema, o 'no' si no quiere hacerlo").toLowerCase();
+
+            let ventatotal = 0;
+            let cont = 0;
+
+            while (soli != "no") {
+                let venta = parseInt(prompt("Digite el valor de la venta"));
+
+                ventatotal += venta;
+                cont++;
+
+                soli = prompt("Digite 'no' si quiere salir").toLowerCase();
+            }
+
+            alert("La cantidad de ventas realizadas fue " + cont +
+                " y el valor total de las ventas fue " + ventatotal);
+        </script>
+</html>
