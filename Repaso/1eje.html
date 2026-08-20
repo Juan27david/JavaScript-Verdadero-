@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        //1.solicitar el costo de envio
+        //2si la compra es menor de 50000 el costo de envio es de 8000
+        //3si la compra es de mas de 50000 y menos de 150000 envio de 5000
+        //4si la compra compra es de mas de 150000 el envio es gratis
+let produc=Number(prompt("Escriba el valor de la venta"));
+
+
+if(produc<50000){
+    alert("El costo de envio es  8000");
+}else if(produc>=50000 && produc <150000){
+    alert("El costo de envio es 5000");
+
+}else if(produc>=150000){
+    alert("El costo de envio es gratis");
+}else{
+    alert("El valor ingresado no es valido , vuelva a intentarlo");
+}
+
+
+    </script>
+</body>
+</html>
